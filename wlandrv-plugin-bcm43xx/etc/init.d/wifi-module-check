@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if	[ ! -f /opt/etc/.cid.info ];then
+	mount -a
+	/usr/bin/wlan.sh check_hw &
+fi
+
+
